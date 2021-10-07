@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 029</title>
+</head>
+<body>
+    <h1>Tabuada - Avançada</h1>
+    <p>
+        Desenvolva um programa que faça a tabuada de um número qualquer inteiro que será digitado pelo usuário, mas a tabuada não deve necessariamente
+        iniciar em 1 e terminar em 10, o valor inicial e final devem ser informafos também pelo usuário, conforme exemplo abaixo:
+    </p>
+    <pre>
+        Montar a tabuada de: 5
+        Começar por: 4
+        Terminar em: 7
+
+        Vou montar a tabuada de 5 começando em 4 e terminando em 7:
+        5 x 4 = 20
+        5 x 5 = 25
+        5 x 6 = 30
+        5 x 7 = 35
+    </pre>
+    <p>
+        Obs: Você deve verificar se o usuário não digitou o final menor que o inicial.
+    </p>
+    <form>
+        Montar a tabuada de: <input id="tabuada" min="0" type="number"><br>
+        Começar por: <input id="inicio" min="0" type="number"><br>
+        Terminar em: <input type="number" id="fim" min="0"><br>
+        <button type="button" onclick="GerarTabuada();">Gerar Tabuada</button>
+    </form>
+    <div id="resposta"></div>
+    <script src="029.js"></script>
+    
+</body>
+</html>
